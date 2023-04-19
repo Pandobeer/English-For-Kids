@@ -1,0 +1,138 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&family=Yanone+Kaffeesatz:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <title>English for kids</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="hamburger-menu">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Main</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Animals</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Clothes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Colors</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Toys</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Numbers</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Fruits</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Family</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Emotions</a>
+                </li>
+            </ul>
+        </nav>
+
+        <h1 class="header__title title">English For Kids</h1>
+
+        <div id="button-box" class="button-box">
+
+            <button id='statistics__toggle-button' class="statistics-button" type="button"
+                aria-label="statistics__toggle" title="Statistics">
+            </button>
+            <button id='statistics__delete-button' class="statistics-button visually-hidden" type="button"
+                aria-label="statistics__delete" title="Delete statistics">
+            </button>
+            <button id='statistics__practice-button' class="statistics-button visually-hidden" type="button"
+                aria-label="statistics__practice" title="Practice difficult words">
+            </button>
+
+            <div class=" toggle">
+                <input type="checkbox" id="toggle__input" class="toggle__input" autocomplete="off" />
+                <label class="toggle__box" for="toggle__input">
+                    <span class="toggle__handle"></span>
+                    <span class="toggle__train">TRAIN</span>
+                    <span class="toggle__play">PLAY</span>
+                </label>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="main">
+        <div id="stars" class="stars visually-hidden"></div>
+
+        <div id="categories" class="categories grid"></div>
+
+        <div id="cards" class="cards grid"></div>
+
+        <button id="start" class="start-button visually-hidden" type="button" title="Start game"></button>
+
+        <div id="statistics" class="statistics visually-hidden">
+            <h2 class="statistics__title title">Statistics</h2>
+            <div class="statistics__box">
+                <table class="statistics__table">
+                    <thead>
+                        <tr id="stat-header">
+                            <th id="sort-by-index" class="alphabet">№</th>
+                            <th id="sort-by-category" class="alphabet">Category</th>
+                            <th id="sort-by-name" class="alphabet">Word</th>
+                            <th id="sort-by-translation" class="alphabet">Translation</th>
+                            <th id="sort-by-trained" class="alphabet">Trained</th>
+                            <th id="sort-by-correct" class="alphabet">Correct</th>
+                            <th id="sort-by-errors" class="alphabet">Errors</th>
+                            <th id="sort-by-percent" class="alphabet">%</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="statistics-body"></tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Total:</td>
+                            <td id="total-trained">0</td>
+                            <td id="total-correct">0</td>
+                            <td id="total-errors">0</td>
+                            <td>0</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+        <div id="gameover"></div>
+    </main>
+
+
+    <footer class="footer">
+        <span>© 2022 Mikalai Valadkevich for</span>&nbsp;
+        <a href="https://rs.school/">«JavaScript/Front-end»</a>&nbsp;
+        <span>by RS School</span>
+    </footer>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
